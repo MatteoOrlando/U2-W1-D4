@@ -4,56 +4,55 @@ body {
 }
 h2 {
   font-size: 45px;
-  color: rgb(44, 42, 42);
 }
+
 p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin-top: 20px;
   font-size: 20px;
-}
-main {
-  font-family: Arial, Helvetica, sans-serif;
 }
 section {
   margin-top: 100px;
 }
 
 #cards {
-  margin-bottom: 2000px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
+/* ------------------------------------------ */
+
 .card-1 {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   height: 200px;
   width: 300px;
-  color: rgb(37, 22, 2);
-
-  box-shadow: 0 18px 20px rgba(37, 30, 30, 0.753);
-  border-radius: 8px;
-  border: 2px solid rgba(20, 20, 22, 0.664);
+  border-radius: 10px;
   margin-right: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-/* COMINCIO CON LA CARD NUMERO 1 COLORANDOLA */
-.card-1 {
+  color: rgb(37, 22, 2);
+  border: 2px solid rgba(20, 20, 22, 0.664);
+  box-shadow: 0 18px 20px rgba(37, 30, 30, 0.753);
   background: linear-gradient(to top, #7c7e25, #e6e2c2);
-  transition: background-color 3s linear 0s;
 }
 
+/* COLOR */
 .card-1:hover {
-  background: linear-gradient(to top, #4ead00, #d8d3aa);
+  color: wheat;
+  background: linear-gradient(to top, #168f48, #e6e2c2);
 }
 /* ------------------------------------------------- */
+
 .card-2 {
+  z-index: 10;
+  margin-bottom: 100px;
   height: 200px;
   width: 300px;
   color: rgb(37, 22, 2);
   background-color: rgb(199, 207, 153);
-  background: linear-gradient(to top, #7c7e25, #e6e2c2);
   box-shadow: 0 18px 20px rgba(37, 30, 30, 0.753);
   border-radius: 8px;
   border: 2px solid rgba(20, 20, 22, 0.664);
@@ -63,12 +62,24 @@ section {
   justify-content: center;
   flex-direction: column;
 }
+
+/* SCALE */
+.card-2:hover {
+  background-color: #c06d2083;
+  transition: 1.5s linear 0.3s;
+  transform: scale(2.3);
+}
+/* ----------------------------------------------- */
+
 .card-3 {
+  transition: 1.5s linear 3s;
+  z-index: 5;
+  margin-bottom: 100px;
   height: 200px;
   width: 300px;
   color: rgb(37, 22, 2);
   background-color: rgb(199, 207, 153);
-  background: linear-gradient(to top, #7c7e25, #e6e2c2);
+  background: linear-gradient(to top, #a8690a, #e6e2c2);
   box-shadow: 0 18px 20px rgba(37, 30, 30, 0.753);
   border-radius: 8px;
   border: 2px solid rgba(20, 20, 22, 0.664);
@@ -78,7 +89,15 @@ section {
   justify-content: center;
   flex-direction: column;
 }
+.card-3:hover {
+  transition: 0.4s linear 0.3s;
+  transform: rotate(180deg) translate(700px, 500px);
+}
+
+/* ----------------------------------------------- */
+
 .card-4 {
+  margin-bottom: 100px;
   height: 200px;
   width: 300px;
   color: rgb(37, 22, 2);
@@ -93,13 +112,16 @@ section {
   justify-content: center;
   flex-direction: column;
 }
+
+/* ---------------------------------------------- */
+
 .card-5 {
+  margin-bottom: 100px;
   height: 200px;
   width: 300px;
   color: rgb(37, 22, 2);
   background-color: rgb(199, 207, 153);
   background: linear-gradient(to top, #7c7e25, #e6e2c2);
-  box-shadow: 0 18px 20px rgba(37, 30, 30, 0.753);
   border-radius: 8px;
   border: 2px solid rgba(20, 20, 22, 0.664);
   margin-right: 50px;
@@ -107,13 +129,26 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transition: box-shadow 1s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
+
+.card-5:hover {
+  color: brown;
+  transition: 0.6s linear 0.3s;
+  transform: rotate(15deg) translate(50px, 40px);
+  box-shadow: 0 0 100px rgba(250, 0, 0, 0.8);
+}
+
+/* ---------------------------------------------- */
+
 .card-6 {
+  margin-bottom: 100px;
   height: 200px;
   width: 300px;
   color: rgb(37, 22, 2);
   background-color: rgb(199, 207, 153);
-  background: linear-gradient(to top, #7c7e25, #e6e2c2);
+  background: linear-gradient(to top, #0bb970f5, #e6e2c2);
   box-shadow: 0 18px 20px rgba(37, 30, 30, 0.753);
   border-radius: 8px;
   border: 2px solid rgba(20, 20, 22, 0.664);
@@ -122,13 +157,16 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transform: rotate(15deg) translate(-80px, 40px);
 }
+
 .card-7 {
+  z-index: 4;
+  margin-bottom: 100px;
   height: 200px;
   width: 300px;
   color: rgb(37, 22, 2);
-  background-color: rgb(199, 207, 153);
-  background: linear-gradient(to top, #7c7e25, #e6e2c2);
+  background-color: rgb(102, 190, 79);
   box-shadow: 0 18px 20px rgba(37, 30, 30, 0.753);
   border-radius: 8px;
   border: 2px solid rgba(20, 20, 22, 0.664);
@@ -137,8 +175,20 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transform: rotate(-20deg) translate(-150px, -40px);
+  transition: 0.5s linear 0.3s;
 }
+.card-7:hover {
+  transition: 1s linear 0.1s;
+  background-color: #c06d2083;
+  transform: translateX(300px) rotate(120deg);
+}
+/* ------------------------------------------------------- */
+
 .card-8 {
+  z-index: 7;
+  margin-bottom: 100px;
+  box-sizing: border-box;
   height: 200px;
   width: 300px;
   color: rgb(37, 22, 2);
@@ -150,6 +200,29 @@ section {
   margin-right: 50px;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
+  overflow: scroll;
+  text-align: center;
+}
+.card-8:hover {
+  color: rgb(245, 245, 245);
+  background: linear-gradient(to top, #584504, #b3aa6c);
+  transition: 0.7s linear 0s;
+  z-index: 2;
+  transform: scale(1.5);
+}
+/* --------------------------------------------------------------- */
+.test-fixed-pos {
+  border: solid 2px #806e0e75;
+  border-radius: 10%;
+  margin-top: 10px;
+  background: linear-gradient(to top, #d6c076, #f3eed1);
+}
+.test-fixed-pos:hover {
+  color: rgb(245, 248, 187);
+  margin-top: 20px;
+  background: linear-gradient(to top, #cec29c, #7c743e);
+  transition: 0.7s linear 0s;
+  z-index: 2;
+  transform: scale(1.5);
 }
